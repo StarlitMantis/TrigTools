@@ -2,13 +2,13 @@
 A suite of useful applications for students in trigonometry 
 
 
-V1.0 Notes:
+v1.0.0 Notes:
 
 Installation:
 
 1. Download the TI Connect CE Software [here](https://education.ti.com/en/software/details/en/CA9C74CAD02440A69FDC7189D7E1B6C2/swticonnectcesoftware) and install it to your computer.
 
-2. Download the TrigTools Zip File from the release page [here](link) and extract the file to a new folder. Save said folder to a place you can easily find.
+2. Download the TrigTools Zip File from the release page [here](https://github.com/StarlitMantis/TrigTools/releases/tag/v1.0.0) and extract the file to a new folder. Save said folder to a place you can easily find.
 
 3. Open the TI Connect CE app and plug your calculator into your computer. On the far left of the app click the icon that looks like a pile of papers that brings you to the connected calculator screen. On the top toolbar there is an icon with a computer with an arrow going to the top left that says “add content from your computer to connected calculator(s).
 
@@ -43,27 +43,35 @@ The program is completed, and you can access all the variables by typing them. S
 Clicking enter after the program has completed will restart it and bring you back to the TrigTools home screen.
 
 2. Radians to Degrees
+
 Simply type in your radian and click enter and it will be converted. This app will work in degree or radian mode.
 
 3. Degrees to Radians 
+
 Enter your degrees and click enter and it will be converted. This app works in either degree or radian mode.
 
 4. Angle Between 2 Vectors
+
 Assuming your vectors are in cartesian form <X,Y>, enter both vectors and the app will find the angle in either degrees or radians based off the mode your calculator is.
 
 5. Pythagorean Theorem
+
 Assuming there is one unknown enter known values in the form A^2+B^2=C^2 and leave the unknown as a zero
 
 6. Vector Projection 
+
 Assuming your vectors is in cartesian form <X,Y>, enter the vector that is being projected onto the second vector first and then enter the vector that will have the first vector projected on it. The app will output the magnitude the projected vector as well as the cartesian form.
 
 7. Dot Product
+
 Assuming your vectors are in cartesian form <X,Y>, enter both vectors and the app will find the dot product of the two. 
 
 8. <A,B> to R,Theta
+
 This app will convert a cartesian vector or point into R, Theta form. This app works in either degree or radian mode and will give theta in the mode you have selected. Enter the vector <A,B> or point (A,B) and the R and Theta Values will be found. 
 
 9. Quit
+
 This app is pretty straight forward.
 
 This concludes a brief how to on TrigTools. This is the first version of the app and on later versions there will be several bug fixes and quality of life improvements. My main goal right now is to condense the 36 files into one file and add more apps that will help along your trigonometry ventures. 
