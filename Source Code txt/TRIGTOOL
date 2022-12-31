@@ -1,0 +1,587 @@
+Menu("TRIG TOOLS!!","TRIANGLE CALC",A,"RADIANS TO DEGREES",B,"DEGREES TO RADIANS",C,"ANGLE BETWEEN 2 VECTORS",D,"PYTHAGOREAN THEOREM",E,"VECTOR PROJECTION",F,"DOT PRODUCT",G,"<A,B> TO R,θ",H,"EXIT",I)
+Lbl A
+A→A
+0→B
+0→C
+0→D
+0→E
+0→F
+0→G
+0→H
+0→I
+0→J
+0→K
+0→L
+0→M
+0→N
+0→O
+0→P
+0→Q
+0→R
+0→S
+0→T
+0→U
+0→V
+0→W
+0→X
+0→Y
+0→Z
+0→θ
+cos(­1)→θ
+Disp " ­"," ­­"," ­Z­","A­  ­ B"," ­   ­"," ­    ­"," ­Y   X­"," ­­­­­­­­","     C"
+Pause 
+Disp "OPP=OPPOSITE"
+Disp "ANG=ANGLE"
+Disp "SIDE A OPP ANG X","SIDE B OPP ANG Y","SIDE C OPP ANG Z","LEAVE UNKNOWNS AS 0","ENTER 3 VALUES"
+Prompt A,B,C,X,Y,Z
+If A=0
+Then
+N+1→N
+End
+If B=0
+Then
+N+1→N
+End
+If C=0
+Then
+N+1→N
+End
+If X=0
+Then
+N+1→N
+End
+If Y=0
+Then
+N+1→N
+End
+If Z=0
+Then
+N+1→N
+End
+If N<3
+Then
+Disp "ONLY SOME CASES WITH"
+Disp "4+ VALUES WORK"
+Disp "CONTINUE AT YOUR OWN RISK"
+Pause 
+0→N
+0→M
+Menu("","YES",N,"NO",M)
+Lbl N
+0→N
+0→M
+Lbl M
+Stop
+End
+While P≥0 and P≤3
+T+1→T
+If T=1
+Then
+A→D
+B→E
+C→F
+X→U
+Y→V
+Z→W
+End
+If T=2
+Then
+C→D
+A→E
+B→F
+Z→U
+X→V
+Y→W
+End
+If T=3
+Then
+B→D
+C→E
+A→F
+Y→U
+Z→V
+X→W
+0→T
+End
+If F≠0 and W≠0
+Then
+If D≠0 or E≠0
+Then
+While Q=0
+1+R→R
+If R=1
+Then
+D→G
+E→H
+U→I
+V→J
+End
+If R=2
+Then
+D→H
+E→G
+U→J
+V→I
+0→R
+End
+If G≠0
+Then
+(Gsin(W)/F)→P
+If P≥­1 and P≤1
+Then
+sin(P)→I
+Else
+ClrHome
+Disp "IMPOSSIBLE TRIANGLE"
+
+Stop
+End
+θ-I→N
+θ-N-W→M
+θ-I-W→J
+(Fsin(J)/sin(W))→H
+If M>0
+Then
+1→K
+(Fsin(M)/sin(W))→L
+End
+1→Q
+End
+End
+If R=1
+Then
+G→D
+H→E
+I→U
+J→V
+Else
+G→E
+H→D
+I→V
+J→U
+End
+If T=1
+Then
+D→A
+E→B
+F→C
+U→X
+V→Y
+W→Z
+End
+If T=2
+Then
+D→C
+E→A
+F→B
+U→Z
+V→X
+W→Y
+End
+If T=0
+Then
+D→B
+E→C
+F→A
+U→Y
+V→Z
+W→X
+End
+Disp A,B,C,X,Y,Z
+If K=1
+Then
+Disp "PRESS ENTER TO VIEW"
+Disp "SECOND TRIANGLE"
+Pause 
+If R=1
+Then
+Disp D,L,F,N,M,W
+Else
+Disp L,E,F,M,N,W
+End
+Stop
+End
+Stop
+End
+If V≠0 or U≠0
+Then
+While Q≠1
+1+R→R
+If R=1
+Then
+D→G
+E→H
+U→I
+V→J
+End
+If R=2
+Then
+D→H
+E→G
+U→J
+V→I
+0→R
+End
+
+If I≠0
+Then
+θ-W-I→J
+(Fsin(I)/sin(W))→G
+(Fsin(J)/sin(W))→H
+1→Q
+End
+End
+If R=1
+Then
+G→D
+H→E
+I→U
+J→V
+Else
+G→E
+H→D
+I→V
+J→U
+End
+If T=1
+Then
+D→A
+E→B
+F→C
+U→X
+V→Y
+W→Z
+End
+If T=2
+Then
+D→C
+E→A
+F→B
+U→Z
+V→X
+W→Y
+End
+If T=0
+Then
+D→B
+E→C
+F→A
+U→Y
+V→Z
+W→X
+End
+Disp A,B,C,X,Y,Z
+If K=1
+Then
+Disp "PRESS ENTER TO VIEW"
+Disp "SECOND TRIANGLE"
+Pause 
+If R=1
+Then
+Disp D,L,F,N,M,W
+Else
+Disp L,E,F,M,N,W
+End
+Stop
+End
+Stop
+End
+End
+If D≠0 and E≠0 and F≠0
+Then
+(D²+E²-F²)/(2*D*E)→W
+If W≥­1 and W≤1
+Then
+cos(W)→W
+Else
+ClrHome
+Disp "IMPOSSIBLE TRIANGLE"
+Stop
+End
+(Esin(W)/F)→P
+If P≥1 and P≤1
+Then
+sin(P)→V
+Else
+ClrHome
+Disp "IMPOSSIBLE TRIANGLE"
+Stop
+End
+θ-W-V→U
+If T=1
+Then
+D→A
+E→B
+F→C
+U→X
+V→Y
+W→Z
+End
+If T=2
+Then
+D→C
+E→A
+F→B
+U→Z
+V→X
+W→Y
+End
+If T=0
+Then
+D→B
+E→C
+F→A
+U→Y
+V→Z
+W→X
+End
+Disp A,B,C,X,Y,Z
+If K=1
+Then
+Disp "PRESS ENTER TO VIEW"
+Disp "SECOND TRIANGLE"
+Pause 
+If R=1
+Then
+Disp D,L,F,N,M,W
+Else
+Disp L,E,F,M,N,W
+End
+Stop
+End
+Stop
+End
+If D≠0 and E≠0 and W≠0
+Then
+√((D²+E²)-(2*D*E*cos(W)))→F
+((E²+F²-D²)/(2*E*F))→P
+If P≥­1 and P≤1
+Then
+cos(P)→U
+Else
+ClrHome
+Disp "IMPOSSIBLE TRIANGLE"
+Stop
+End
+θ-W-U→V
+If T=1
+Then
+D→A
+E→B
+F→C
+U→X
+V→Y
+W→Z
+End
+If T=2
+Then
+D→C
+E→A
+F→B
+U→Z
+V→X
+W→Y
+End
+If T=0
+Then
+D→B
+E→C
+F→A
+U→Y
+V→Z
+W→X
+End
+Disp A,B,C,X,Y,Z
+If K=1
+Then
+Disp "PRESS ENTER TO VIEW"
+Disp "SECOND TRIANGLE"
+Pause 
+If R=1
+Then
+Disp D,L,F,N,M,W
+Else
+Disp L,E,F,M,N,W
+End
+Stop
+End
+Stop
+End
+If U≠0 and V≠0 and W≠0
+Then
+ClrHome
+Disp "IMPOSSIBLE TRIANGLE"
+Stop
+End
+If D≠0 and W≠0
+Then
+If U≠0
+Then
+θ-U-W→V
+(Dsin(V)/sin(U))→E
+(Dsin(W)/sin(U))→F
+End
+If V≠0
+Then
+θ-V-W→U
+(Dsin(V)/sin(U))→E
+(Dsin(W)/sin(U))→F
+End
+If T=1
+Then
+D→A
+E→B
+F→C
+U→X
+V→Y
+W→Z
+End
+If T=2
+Then
+D→C
+E→A
+F→B
+U→Z
+V→X
+W→Y
+End
+If T=0
+Then
+D→B
+E→C
+F→A
+U→Y
+V→Z
+W→X
+End
+Disp A,B,C,X,Y,Z
+If K=1
+Then
+Disp "PRESS ENTER TO VIEW"
+Disp "SECOND TRIANGLE"
+Pause 
+If R=1
+Then
+Disp D,L,F,N,M,W
+Else
+Disp L,E,F,M,N,W
+End
+Stop
+End
+Stop
+End
+P+1→P
+End
+If T=1
+Then
+D→A
+E→B
+F→C
+U→X
+V→Y
+W→Z
+End
+If T=2
+Then
+D→C
+E→A
+F→B
+U→Z
+V→X
+W→Y
+End
+If T=0
+Then
+D→B
+E→C
+F→A
+U→Y
+V→Z
+W→X
+End
+Disp A,B,C,X,Y,Z
+If K=1
+Then
+Disp "PRESS ENTER TO VIEW"
+Disp "SECOND TRIANGLE"
+Pause 
+If R=1
+Then
+Disp D,L,F,N,M,W
+Else
+Disp L,E,F,M,N,W
+End
+Stop
+End
+Stop
+Stop
+Lbl B
+Disp "ENTER RADIAN"
+Prompt R
+(((R)*180)/π)→D
+Disp "DEGREE=",D
+Stop
+Lbl C
+Disp "ENTER DEGREES"
+Prompt D
+(((D)*π)/180)→R
+Disp "DEGREES=",R
+Stop
+Lbl D
+Disp "<A,B>"
+Prompt A,B
+Disp "<C,D>"
+Prompt C,D
+√((A)^2+(B)^2)→E
+√((C)^2+(D)^2)→F
+(A*C)+(B*D)→G
+cos((G)/(E*F))→H
+Disp "θ= ",H
+Stop
+Lbl E
+Disp "A²+B²=C²","PUT 0 FOR UNKNOWN"
+Prompt A,B,C
+If A=0 and B≠0 and C≠0
+Then
+√((C)^2-(B)^2)→D
+End
+If B=0 and A≠0 and C≠0
+Then
+√((C)^2-(A)^2)→D
+End
+If C=0 and A≠0 and B≠0
+Then
+√((A)^2+(B)^2)→D
+End
+Disp D
+Stop
+Lbl F
+Disp "<A,B>"
+Prompt A,B
+Disp "<C,D>"
+Prompt C,D
+(A*C)+(B*D)→E
+√((C)^2+(D)^2)→F
+(E/F)→G
+Disp "MAG",G
+(G*(C/F)→X
+(G*(D/F)→Y
+Disp "<",X,",",Y,">"
+Stop
+Lbl G
+Disp "<A,B>"
+Prompt A,B
+Disp "<C,D>"
+Prompt C,D
+(A*C)+(B*D)→E
+Disp E
+Stop
+Lbl H
+Disp "<A,B>"
+Prompt A,B
+√((A)^2+(B)^2)→R
+cos(A/R)→θ
+Disp "R:",R,"θ:",θ
+Stop
+Lbl I
+Stop
